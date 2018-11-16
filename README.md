@@ -6,6 +6,9 @@
 
 A site that displays drinks at the bar.
 
+**Component Structure:**
+![Alt text](src/shot.png)
+
 ### The Major Differences Between React and Angular:
 
 1. Angular allows two-way data binding while React allows one-way data binding.
@@ -35,7 +38,7 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:8080/`. The 
 
 * Clone this repository from https://github.com/reginanurieva/Tap_Room_React.git
 
-* * Open up in the console with the following command:
+* Open up in the console with the following command:
 ```
 cd Tap_Room_React
 ```
