@@ -5,7 +5,7 @@ function Header(){
   return (
     <div>
       <h1>Tap Room</h1>
-      <button className="btn btn-daner">HI</button>
+      <button className="btn btn-danger">HI</button>
       {/* <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link> */}
     </div>
   );

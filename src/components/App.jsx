@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 //import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 
