@@ -12,7 +12,12 @@ A site that displays drinks at the bar.
 
 2. Angular uses the browser's DOM, while React uses a virtual DOM.
 
-3. 
+3. Angularis a JS framework by nature, but is built to use TypeScript. React, on the other hand, is a JavaScript library as well, but recommends using JSX.
+
+4. This will differ from individual to individual based on skill and experience. On average, TypeScript is considered harder to learn than JSX, in turn increasing the learning curve with Angular as compared to React.
+
+5. Angular is a fully-featured MVC framework. React is just more of a 'V' in the MVC.
+
 
 ## Specs week I
 
@@ -21,12 +26,6 @@ A site that displays drinks at the bar.
 2. Create basic structure of application.
 
 3. Add routing to the application.
-
-4. Angularis a JS framework by nature, but is built to use TypeScript. React, on the other hand, is a JavaScript library as well, but recommends using JSX.
-
-5. This will differ from individual to individual based on skill and experience. On average, TypeScript is considered harder to learn than JSX, in turn increasing the learning curve with Angular as compared to React.
-
-6. Angular is a fully-featured MVC framework. React is just more of a 'V' in the MVC.
 
 ## Development server
 
