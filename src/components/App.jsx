@@ -30,7 +30,6 @@ function App(){
           // }
 
         `}</style>
-      taproom
       <Switch>
         <Route exact path='/' component={Menu} />
         <Route path='/newdrink' component={NewDrink} />

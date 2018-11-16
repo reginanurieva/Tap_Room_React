@@ -2,20 +2,23 @@ import React from 'react';
 
 function NewDrink(){
   return (
-    <div>
+    <div className="container">
+    <br/>
       <form>
         <input
           type='text'
           id='names'
-          placeholder='Pair Names'/>
+          placeholder='Drink Name'/>
         <input
           type='text'
           id='location'
-          placeholder='Location'/>
-        <textarea
+          placeholder='Ingredients'/>
+        <input
           id='issue'
-          placeholder='Describe your issue.'/>
-        <button type='submit'>Help!</button>
+          placeholder='Purpose'/>
+          <br/>
+          <br/>
+        <button className="btn btn-danger" type='submit'>Add new Masterpiece</button>
       </form>
     </div>
   );

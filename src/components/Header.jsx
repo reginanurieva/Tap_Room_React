@@ -7,15 +7,19 @@ function Header() {
       <style jsx>{`
         .header {
           height: 100px;
-          border: 1px black solid;
           text-align: center;
-          // background-image: url(https://www.gannett-cdn.com/presto/2018/08/24/USAT/6de549a7-620f-4bfd-8a2a-f3d20477600a-GettyImages-846037086.jpg?crop=2120,1186,x0,y0&width=3200&height=1680&fit=bounds);
-          // background-position: center;
-          // background-size: contain;
-          // background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: url(https://www.take3.org/wp-content/uploads/2018/03/Glitter.png);
+        }
+        h1{
+            font-family: fantasy;
+            font-weight: 600;
+            color: #61e258;
         }
       `}</style>
-      <h1>Tap Room</h1>
+      <h1>Regina's Dream Bar</h1>
       <Link to="/">Home</Link>
     </div>
   );
