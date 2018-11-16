@@ -13,10 +13,10 @@ function Header() {
           background-repeat: no-repeat;
           background-image: url(https://www.take3.org/wp-content/uploads/2018/03/Glitter.png);
         }
-        h1{
-            font-family: fantasy;
-            font-weight: 600;
-            color: #61e258;
+        h1 {
+          font-family: fantasy;
+          font-weight: 600;
+          color: #423d7f;
         }
       `}</style>
       <h1>Regina's Dream Bar</h1>

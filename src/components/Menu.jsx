@@ -30,14 +30,13 @@ function Menu() {
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
-          background-image: url(
-            https://www.gannett-cdn.com/presto/2018/08/24/USAT/6de549a7-620f-4bfd-8a2a-f3d20477600a-GettyImages-846037086.jpg?crop=21201186x0y0&width=3200&height=1680&fit=bounds);
+          background-image: url(https://www.gannett-cdn.com/presto/2018/08/24/USAT/6de549a7-620f-4bfd-8a2a-f3d20477600a-GettyImages-846037086.jpg?crop=21201186x0y0&width=3200&height=1680&fit=bounds);
         }
         button {
-            background-color: white;
-            color: black;
-            float: center;
-            margin-left: 40px;
+          background-color: white;
+          color: black;
+          float: center;
+          margin-left: 40px;
         }
       `}</style>
       <hr />
@@ -49,7 +48,9 @@ function Menu() {
           key={index}
         />
       ))}
-      <Link to="/newdrink"><button>Add new Creation</button></Link>
+      <Link to="/newdrink">
+        <button>Add new Creation</button>
+      </Link>
     </div>
   );
 }
