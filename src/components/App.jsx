@@ -28,8 +28,15 @@ this.state = {
       purpose: "Please take me to heaven"
     }
   ]
+}
+this.handleAddingNewDrinkToList = this.handleAddingNewDrinkToList.bind(this)
 };
-};
+
+handleAddingNewDrinkToList(newDrink){
+    var newMasterDrinkList = this.state.menuList.slice();
+    newMasterDrinkList.push(newDrink);
+    this.setState({menuList: newMasterDrinkList});
+  }
 
 render(){
   return (
@@ -39,7 +46,7 @@ render(){
         `}</style>
       <Switch>
         <Route exact path='/' render={()=><Menu menuList={this.state.menuList}/>}/>
-        <Route path='/newdrink' component={NewDrink} />
+        <Route path='/newdrink' render={() => <NewDrink onAddingNewDrinkToList={this.handleAddingNewDrinkToList}/>}/>
       </Switch>
     </div>
   );
