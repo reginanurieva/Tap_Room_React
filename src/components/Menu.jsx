@@ -29,6 +29,8 @@ function Menu(props) {
           name={cocktail.name}
           contain={cocktail.contain}
           purpose={cocktail.purpose}
+          onDelete={props.onDelete}
+          id={index}
           key={index}
         />
       ))}

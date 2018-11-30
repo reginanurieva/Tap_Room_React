@@ -29,7 +29,8 @@ this.state = {
     }
   ]
 }
-this.handleAddingNewDrinkToList = this.handleAddingNewDrinkToList.bind(this)
+this.handleAddingNewDrinkToList = this.handleAddingNewDrinkToList.bind(this);
+this.handleDelete=this.handleDelete.bind(this);
 };
 
 handleAddingNewDrinkToList(newDrink){
@@ -37,6 +38,13 @@ handleAddingNewDrinkToList(newDrink){
     newMasterDrinkList.push(newDrink);
     this.setState({menuList: newMasterDrinkList});
   }
+  
+  handleDelete(drinkId) {
+    console.log(drinkId)
+     let drinksFromMenu = this.state.menuList;
+     drinksFromMenu.splice(drinkId, 1);
+     this.setState({menuList: drinksFromMenu});
+ }
 
 render(){
   return (
@@ -45,7 +53,8 @@ render(){
     <style jsx>{`
         `}</style>
       <Switch>
-        <Route exact path='/' render={()=><Menu menuList={this.state.menuList}/>}/>
+        <Route exact path='/' render={()=><Menu menuList={this.state.menuList}
+        onDelete={this.handleDelete} />}/>
         <Route path='/newdrink' render={() => <NewDrink onAddingNewDrinkToList={this.handleAddingNewDrinkToList}/>}/>
       </Switch>
     </div>
