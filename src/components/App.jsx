@@ -13,17 +13,17 @@ super(props);
 this.state = {
   menuList:[
     {
-      drink: "Hardcore Bull",
+      name: "Hardcore Bull",
       contain: "Red Bull, Vodka, Fireball",
       purpose: "Totally waisted"
     },
     {
-      drink: "Little Slut",
+      name: "Little Slut",
       contain: "Vodka, Corona Beer, Sake, Orange Liquor",
       purpose: "For Tired Girls"
     },
     {
-      drink: "Wizzard of Loss",
+      name: "Wizzard of Loss",
       contain: "Vodka, Yegermeister, Brandy, Fanta",
       purpose: "Please take me to heaven"
     }

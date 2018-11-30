@@ -17,7 +17,7 @@ function Menu(props) {
           background-image: url(https://www.gannett-cdn.com/presto/2018/08/24/USAT/6de549a7-620f-4bfd-8a2a-f3d20477600a-GettyImages-846037086.jpg?crop=21201186x0y0&width=3200&height=1680&fit=bounds);
         }
         button {
-          background-color: white;
+          // background-color: white;
           color: black;
           float: center;
           margin-left: 40px;
@@ -26,14 +26,14 @@ function Menu(props) {
       <hr />
       {props.menuList.map((cocktail, index) => (
         <Body
-          drink={cocktail.drink}
+          name={cocktail.name}
           contain={cocktail.contain}
           purpose={cocktail.purpose}
           key={index}
         />
       ))}
       <Link to="/newdrink">
-        <button>Add new Creation</button>
+        <button className="btn btn-danger">Add new Creation</button>
       </Link>
     </div>
   );

@@ -7,13 +7,17 @@ function Body(props) {
     <div className="bodyComp">
       <style jsx>{`
         .bodyComp {
-          height: 200px;
+          height: 20%;
           text-align: left;
           color: white;
           margin-left: 30px;
         }
+        
+        button {
+          color: red;
+        }
       `}</style>
-      <h3>{props.drink}</h3>
+      <h3>{props.name}</h3>
       <h4>{props.contain}</h4>
       <p>
         <em>{props.purpose}</em>
@@ -25,7 +29,7 @@ function Body(props) {
 }
 
 Body.propTypes = {
-  drink: PropTypes.string,
+  name: PropTypes.string,
   contain: PropTypes.string,
   purpose: PropTypes.string
 };

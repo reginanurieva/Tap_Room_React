@@ -28,7 +28,7 @@ function NewDrink(props) {
             id='contain'
             placeholder='Contain'
             ref={(input) => {_contain = input;}}/>
-          <textarea
+          <input
             id='purpose'
             placeholder='Purpose'
             ref={(textarea) => {_purpose = textarea;}}/>
