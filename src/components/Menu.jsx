@@ -1,26 +1,10 @@
 import React from "react";
 import Body from "./Body";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
-var menuList = [
-  {
-    drink: "Hardcore Bull",
-    contain: "Red Bull, Vodka, Fireball",
-    purpose: "Totally waisted"
-  },
-  {
-    drink: "Little Slut",
-    contain: "Vodka, Corona Beer, Sake, Orange Liquor",
-    purpose: "For Tired Girls"
-  },
-  {
-    drink: "Wizzard of Loss",
-    contain: "Vodka, Yegermeister, Brandy, Fanta",
-    purpose: "Please take me to heaven"
-  }
-];
 
-function Menu() {
+function Menu(props) {
   return (
     <div className="menu">
       <style jsx>{`
@@ -40,7 +24,7 @@ function Menu() {
         }
       `}</style>
       <hr />
-      {menuList.map((cocktail, index) => (
+      {props.menuList.map((cocktail, index) => (
         <Body
           drink={cocktail.drink}
           contain={cocktail.contain}

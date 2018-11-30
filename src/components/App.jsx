@@ -7,38 +7,42 @@ import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 //import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 
-/*
-  import { Link } from 'react-router-dom';
-  <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
-*/
+class App extends React.Component {
+constructor(props) {
+super(props);
+this.state = {
+  menuList:[
+    {
+      drink: "Hardcore Bull",
+      contain: "Red Bull, Vodka, Fireball",
+      purpose: "Totally waisted"
+    },
+    {
+      drink: "Little Slut",
+      contain: "Vodka, Corona Beer, Sake, Orange Liquor",
+      purpose: "For Tired Girls"
+    },
+    {
+      drink: "Wizzard of Loss",
+      contain: "Vodka, Yegermeister, Brandy, Fanta",
+      purpose: "Please take me to heaven"
+    }
+  ]
+};
+};
 
-function App(){
-  var styles = {
-  };
+render(){
   return (
     <div className="main">
     <Header/>
-    
     <style jsx>{`
-          // .main {
-          //   // height: 900px;
-          //   text-align: left;
-          //   background-position: center;
-          //   background-size: contain;
-          //   background-repeat: no-repeat;
-            
-          // }
-
         `}</style>
       <Switch>
-        <Route exact path='/' component={Menu} />
+        <Route exact path='/' render={()=><Menu menuList={this.state.menuList}/>}/>
         <Route path='/newdrink' component={NewDrink} />
       </Switch>
     </div>
   );
-}
-
-//App.propTypes = {
-//};
+}}
 
 export default App;
