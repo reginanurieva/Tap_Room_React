@@ -30,6 +30,13 @@ A site that displays drinks at the bar.
 
 3. Add routing to the application.
 
+## Specs week II
+
+1. Create a stateful component to dispalay dinamic data.
+
+3. Refactor the existing components to follow the best practices. 
+
+
 ## Development server
 
 Run `npm run start` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
